@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Photo Page</title>
 </head>
+<button id ="open-button" onclick="openSidebar()" >
+    <i class="fa-solid fa-bars"></i>
+</button>
 <body>
-       <nav>
+       <nav id ="navbar">
         <ul>
-            <li class="active-li"><a href="#" class="home">Home</a></li>
+            <li>
+                <button id = "closed-button" onclick="closedSidebar()">
+    <i class="fa-solid fa-x"></i>
+            </li>
+            <li class="active-li"><a class="home" aria-current="page" href="#" >Home</a></li>
             <li><a href="#" class="About">About</a></li>
             <li><a href="#" class="PhotoView">PhotoShop</a></li>
             <li><a href="#" class="Contact">Contact</a></li>
